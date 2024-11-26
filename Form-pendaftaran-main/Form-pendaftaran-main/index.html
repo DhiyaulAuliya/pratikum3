@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla+Tamil+Inclined:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles\style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="nav-link">
+        <h1>Lomba Catur Kampus</h1>
+        <button >Home</button>
+        <button onclick="tentang()">About</button>
+        <button onclick="kontak()">Contact</button>
+        <button onclick="service()">Service</button>
+    </nav>
+       
+    <main>
+        <div class="content">
+            <article>
+                <h2>Informasi lomba Catur</h2>
+                <p>Selamat datang di Turnamen Catur Terbuka UIN !
+                    Event bergengsi ini mengundang pecinta catur dari berbagai kalangan untuk beradu strategi dan kecerdikan di atas papan hitam-putih.
+                     Turnamen ini dirancang untuk menguji kemampuan analisis, ketepatan, serta ketangguhan mental setiap peserta dalam persaingan yang menantang dan seru.
+                </p>
+
+            </article>
+            <article>
+                <h2>Syarat dan Aturan :</h2>
+                <ol>
+                    <li>Terbuka untuk umum, wajib mendaftar sebelum 8 Desember 2024.</li>
+                    <li>Pendaftaran Online/offline dengan biaya 25.000 (jika ada).</li>
+                    <li>Mengikuti standar FIDE; sistem Swiss/gugur, waktu 20 menit per pemain.</li>
+                    <li>Hadir 15 menit sebelum pertandingan, keterlambatan = WO.</li>
+                    <li>Keputusan wasit/panitia final.</li>
+                </ol>
+                <p>Segera daftar dan buktikan strategi terbaikmu di turnamen catur!!</p>
+            </article>
+        </div>
+        <section>
+            <aside>
+                <img src="styles/image.jpg">
+            </aside>
+            <div class="daftar"><button onclick="regist()"><b>Regist Now</b></button></div>
+        </section>
+    </main>
+        <footer>
+            <p>Tugas praktikum  &copy; Dhiyaul Auliya</p>
+               
+        </footer>
+        <script>
+        function regist() {
+            window.location.href = "formPendaftaran.html"
+        }
+
+
+
+        </script>
+</body>
+</html>

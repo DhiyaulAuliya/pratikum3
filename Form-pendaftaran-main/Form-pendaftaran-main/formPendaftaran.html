@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="styles/style_form.css">
+</head>
+<body>
+    <h1>Form Pendaftaran Lomba</h1>
+    <form action="proses_data.php" method="post">
+        <!-- Input untuk Nama -->
+        <div class="form-group">
+            <label for="nama">Nama Team: </label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <!-- Input untuk Cabang Olahraga -->
+        <div class="form-group">
+            <label for="cabor">Cabang Olahraga: </label>
+            <input type="text" id="cabor" name="cabor" required>
+        </div>
+
+        <!-- Input untuk Nomor Telepon -->
+        <div class="form-group">
+            <label for="tel">No Telepon/WA: </label>
+            <input type="tel" id="tel" name="tel" required>
+        </div>
+
+        <!-- Pilihan Radio untuk Status -->
+        <div class="form-group">
+            <label>Status</label>
+            <div class="radio-group">
+                <input type="radio" id="pelajar" name="Status" value="pelajar">
+                <label for="pelajar">Pelajar</label>
+                
+                <input type="radio" id="mahasiswa" name="Status" value="mahasiswa">
+                <label for="mahasiswa">Mahasiswa</label>
+                
+                <input type="radio" id="pekerja" name="Status" value="pekerja">
+                <label for="pekerja">Pekerja</label>
+            </div>
+        </div>
+
+        <!-- Input untuk List Nama Anggota Tim -->
+        <div class="form-group">
+            <label for="pesan">List Nama Anggota Tim:</label>
+            <textarea name="pesan" id="pesan" rows="3" placeholder="Tuliskan nama anggota tim"></textarea>
+        </div>
+
+        <!-- Tombol Kirim -->
+        <div class="form-group">
+            <button type="submit">Kirim</button>
+        </div>
+    </form>
+</body>
+</html>
